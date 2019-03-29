@@ -1,0 +1,37 @@
+1、static MediaPlayer??create(Context context, Uri uri, SurfaceHolder holder)指定从资源ID对应的资源文件中来装载音乐文件，同时指定了SurfaceHolder对象并返回MediaPlyaer对象。
+2、static MediaPlayer?create(Context context, int resid)?指定从资源ID对应的资源文件中来装载音乐文件，并返回新创建的MediaPlyaer对象。
+3、static MediaPlayer?create(Context context, Uri uri)?从指定Uri装在音频文件，并返回新创建的MediaPlayer对象。
+4、int?getCurrentPosition()?获取当前播放的位置。
+5、int?getDuration()?获取音频的时长。
+6、int?getVideoHeight()?获取视频的高度。
+7、int?getVideoWidth()?获取视频的宽度。
+8、boolean isLooping()?判断MediaPlayer是否正在循环播放。
+9、boolean?isPlaying()?判断MediaPlayer是否正在播放。
+10、void pause()?暂停播放。
+11、void prepare()准备播放（装载音频），调用此方法会使MediaPlayer进入Prepared状态。
+12、void prepareAsync()准备播放异步音频。
+13、void release()?释放媒体资源。
+14、void?reset()?重置MediaPlayer进入未初始化状态。
+15、void?seekTo(int msec)?寻找指定的时间位置。
+16、void?setAudioStreamType(int streamtype)?设置音频流的类型。
+17、void?setDataSource(String path)?指定装载path路径所代表的文件。
+18、?void?setDataSource(Context context, Uri uri, Map指定装载uri所代表的文件。
+19、void?setDataSource(Context context, Uri uri)?指定装载uri所代表的文件。
+20、void?setDataSource(FileDescriptor fd, long offset, long length)?指定装载fd所代表的文件中从offset开始长度为length的文件内容。
+21、void?setDataSource(FileDescriptor fd)?指定装载fd所代表的文件。
+22、void?setDisplay(SurfaceHolder sh)?设置显示方式。
+23、void?setLooping(boolean looping)设置是否循环播放。
+24、void?setNextMediaPlayer(MediaPlayer next)?设置当前流媒体播放完毕,下一个播放的MediaPlayer。
+25 void?setOnBufferingUpdateListener(MediaPlayer.OnBufferingUpdateListener listener)注册一个回调函数,在网络视频流缓冲变化时调用。
+26、void?setOnCompletionListener(MediaPlayer.OnCompletionListener listener)?为Media Player的播放完成事件绑定事件监听器。
+27、void?setOnErrorListener(MediaPlayer.OnErrorListener listener)为MediaPlayer的播放错误事件绑定事件监听器。
+28、void?setOnPreparedListener(MediaPlayer.OnPreparedListener listener)当MediaPlayer调用prepare()方法时触发该监听器。
+29、void?setOnSeekCompleteListener(MediaPlayer.OnSeekCompleteListener listener)当MediaPlayer调用seek()方法时触发该监听器。
+30、setOnVideoSizeChangedListener(MediaPlayer.OnVideoSizeChangedListener listener)注册一个用于监听视频大小改变的监听器。
+31、void setScreenOnWhilePlaying(boolean screenOn)置是否使用SurfaceHolder来显示。
+32、void setSurface(Surface surface)设置Surface。
+33、void setVideoScalingMode(int mode)?设置视频缩放的模式。
+34、void setVolume(float leftVolume, float rightVolume)?设置播放器的音量。
+35、void setWakeMode(Context context, int mode)?为MediaPlayer设置低级电源管理行为。
+36、void start()?开始或恢复播放。
+37、void stop()?停止播放
