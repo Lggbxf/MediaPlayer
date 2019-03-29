@@ -1,0 +1,20 @@
+Git常用命令
+
+git init
+git status
+git add -A .
+git commit -m "xxx"
+git remote add origin gitAddress
+git config --global user.name "username"
+git config --global user.email "email"
+git reset --hard HEAD^n  n代表后退n步
+git branch -v 查看所有分支
+git branch dev
+git checkout dev 切换分支
+分支合并
+git checkout master
+git merge dev
+
+git push origin master
+git push origin master1:master2   master1:本地分支名   master2:远程分支名
+git pull origin master2:master1
